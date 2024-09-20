@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+// import testComponent from './Test.js';
 
 function App() {
   return (
@@ -7,16 +8,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello, world!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://gavinplay.wixsite.com/gavin-meyer-portfoli"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Look at completed portfolio (Made in Wix)
         </a>
+
+        <a href="./GavinMeyerResumeF.docx" download="Gavin_Meyer_Resume">My Resume</a>
+      
       </header>
     </div>
   );
