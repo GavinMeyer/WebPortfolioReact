@@ -1,7 +1,10 @@
 import logo from './ferret_goof_smile.webp';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
 
-function App() {
+function Bio(){
+
   return (
     <div className="App">
       <header className="App-header">
@@ -25,6 +28,16 @@ function App() {
         <a href="./GavinMeyerResumeF.docx" download="Gavin_Meyer_Resume">My Resume</a>
       </header>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Bio />
+      <Footer />
+    </>
   );
 }
 
