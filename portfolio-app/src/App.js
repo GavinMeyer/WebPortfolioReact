@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+import logo from './ferret_goof_smile.webp';
 import './App.css';
-// import testComponent from './Test.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <a href="https://www.youtube.com/watch?v=ZBoz2mitPiY">
+          <img src={logo} className="App-logo" alt="logo"/>
+        </a>
+        <br /><br />
+
         <p>
           Hello, world!
         </p>
@@ -20,7 +23,6 @@ function App() {
         </a>
 
         <a href="./GavinMeyerResumeF.docx" download="Gavin_Meyer_Resume">My Resume</a>
-      
       </header>
     </div>
   );

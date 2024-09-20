@@ -1,0 +1,29 @@
+
+div.scroll {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(172, 108, 119, 1.0);
+    /* background: linear-gradient(0.25turn, rgb(172, 108, 119, 1.0), rgb(172, 108, 119, 0.5), rgb(172, 108, 119, 1.0)); */
+}
+
+div.rightward {
+    float: right;
+    padding-right: 55px;
+}
+
+a.order1 {
+    text-decoration: none;
+    padding-left: 1%;
+}
+
+a.order2 {
+    text-decoration: none;
+}
+
+a.order3 {
+    text-decoration: none;
+    padding-right: 20px;
+}
