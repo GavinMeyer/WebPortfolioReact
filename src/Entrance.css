@@ -1,0 +1,27 @@
+body {
+    overflow: auto;
+    background: #282c34;
+}
+
+h1 {
+    align-self: right;
+}
+
+.mainDiv {
+    background: lightblue;
+    position: relative;
+    min-height: 95dvh;
+    margin: 1%;
+}
+
+.innerDiv{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+
+    background: aqua;
+}
