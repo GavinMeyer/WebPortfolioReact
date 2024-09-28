@@ -5,7 +5,7 @@ function Header(){
         <div className='scroll'>
             <h3>
 
-                <a href="/#" className="order1">
+                <a href="/" className="order1">
                     GAVIN MEYER
                 </a>
                 
@@ -14,7 +14,7 @@ function Header(){
                         WIX
                     </a>
                     
-                    <a href="/#test" className="order2">
+                    <a href="/" className="order2">
                         Test
                     </a>
                 </div>

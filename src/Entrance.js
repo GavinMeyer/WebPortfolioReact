@@ -7,7 +7,16 @@ function Entrance(){
             <div className="innerDiv">
                 <h1>WELCOME TO GAVIN MEYER'S PORTFOLIO</h1>
                 <br />
-                <Link to="/home" >LEARN ABOUT ME</Link>
+
+                <div className="buttonDiv">
+                    <Link to="/home">
+                        <button>About Me</button>
+                    </Link>
+                    
+                    <Link to="/projects">
+                        <button>Projects</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

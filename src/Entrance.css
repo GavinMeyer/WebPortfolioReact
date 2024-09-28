@@ -1,10 +1,12 @@
 body {
     overflow: auto;
     background: #282c34;
+    
 }
 
 h1 {
-    align-self: right;
+    margin: auto;
+    width: 50%;
 }
 
 .mainDiv {
@@ -12,16 +14,31 @@ h1 {
     position: relative;
     min-height: 95dvh;
     margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.innerDiv{
-    position: absolute;
-    top: 50%;
+.innerDiv {
+    /* position: static; */
+    background: transparent;
+    padding: 1%;
+
+    /* margin: auto;
+    width: 50%;
+    height: 50%; */
+    /* top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
 
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
+.buttonDiv {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
 
-    background: aqua;
+.buttonFlex {
+    flex: 1;
 }

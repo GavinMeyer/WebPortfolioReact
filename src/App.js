@@ -1,16 +1,17 @@
-import logo from './ferret_goof_smile.webp';
 import './App.css';
+import logo from './ferret_goof_smile.webp';
 import Header from './Header';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 function Bio(){
 
   return (
     <div className="App">
       <header className="App-header">
-        <a href="https://www.youtube.com/watch?v=ZBoz2mitPiY">
+        <Link to="https://en.wikipedia.org/wiki/Ferret">
           <img src={logo} className="App-logo" alt="logo"/>
-        </a>
+        </Link>
         <br /><br />
 
         <p>
