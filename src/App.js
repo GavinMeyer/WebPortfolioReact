@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './ferret_goof_smile.webp';
+import logo from './images/ferret_goof_smile.webp';
 import Header from './Header';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';

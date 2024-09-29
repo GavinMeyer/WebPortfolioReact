@@ -1,22 +1,23 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 function Header(){
     return(
         <div className='scroll'>
             <h3>
 
-                <a href="/" className="order1">
+                <Link to="/" className="order1">
                     GAVIN MEYER
-                </a>
+                </Link>
                 
                 <div className="rightward">
-                    <a href="https://gavinplay.wixsite.com/gavin-meyer-portfoli" className="order3">
-                        WIX
-                    </a>
+                    <Link to="/home" className="order3">
+                        About Me
+                    </Link>
                     
-                    <a href="/" className="order2">
-                        Test
-                    </a>
+                    <Link to="/projects" className="order2">
+                        Projects
+                    </Link>
                 </div>
 
             </h3>

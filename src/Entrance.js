@@ -5,7 +5,7 @@ function Entrance(){
     return(
         <div className="mainDiv">
             <div className="innerDiv">
-                <h1>WELCOME TO GAVIN MEYER'S PORTFOLIO</h1>
+                <h1 className='entrance'>WELCOME TO GAVIN MEYER'S PORTFOLIO</h1>
                 <br />
 
                 <div className="buttonDiv">

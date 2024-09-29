@@ -12,10 +12,17 @@
 }
 
 button {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     height: 50px;
     width: 150px;
     font-size: large;
     margin-right: 10px;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: black;
 }

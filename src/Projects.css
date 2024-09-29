@@ -1,3 +1,58 @@
-p {
+.projects {
     color: white;
+}
+
+.selectionDiv {
+    padding-bottom: 30px;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singleProjectDiv {
+    margin-left: 1%;
+    margin-right: 1%;
+    color: white;
+    display: flex;
+}
+
+.leftCol {
+    flex: 1;
+}
+
+.rightCol {
+    flex: 1;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+.crud1 {
+    flex: 1;
+    width: 50%;
+    height: 100%;
+}
+
+.mines1 {
+    flex: 1;
+    width: 25%;
+    height: 25%;
+}
+
+.mines1:hover {
+    opacity: 40%;
+    transition: opacity 0.6s;
+}
+
+.robo1 {
+    flex: 1;
+    width: 50%;
+    height: 100%;
 }
