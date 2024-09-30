@@ -1,7 +1,10 @@
 import './Projects.css';
 import Header from './Header';
 import Footer from './Footer';
-import { useReducer } from 'react';
+import { useReducer, useRef } from 'react';
+import animelleCover from './images/animelle.png';
+import crudCover from './images/crud1.png';
+import roboCover from './images/robo2.png';
 
 function Project(props) {
 
@@ -29,6 +32,8 @@ function Project(props) {
                 </div>
 
                 <div className="rightCol">
+                    <img src={animelleCover} alt="Main Menu of ELLE's Animelle Crossing game" className="cover"/>
+                    
                     <h3>
                         Updated a game on ELLE's language learning website for students. <br/><br/>
                         The site's purpose is to teach students a new language through use of fun video games. Aside from helping with minor bug fixing and smaller 
@@ -59,6 +64,8 @@ function Project(props) {
                 </div>
 
                 <div className="rightCol">
+                    <img src={crudCover} alt="Front page of CRUD website" className="cover"/>
+
                     <h3>
                     LAMP stands for Linux, Apache, MySQL, PHP. <br />
                     CRUD stands for Create, Read, Update, Delete. <br /><br />
@@ -74,27 +81,29 @@ function Project(props) {
         return (
             <div className="singleProjectDiv">
                 <div className="leftCol">
-                    <h1>wip</h1>
+                    <h1>Robot AI (Q-Learning)</h1>
                     <h2>Project Type:</h2>
-                    <h4>School Project</h4>
+                    <h4>Personal Project</h4>
 
                     <h2>Date</h2>
-                    <h4>August - October 2023</h4>
+                    <h4>December 2023</h4>
 
                     <h2>Tech Stack</h2>
-                    <h4>HTML, PHP, Bootstrap, JavaScript, MySQL</h4>
+                    <h4>AI, Godot, GDScript</h4>
 
                     <h2>Group Size</h2>
-                    <h4>5</h4>
+                    <h4>1</h4>
                 </div>
 
                 <div className="rightCol">
+                    <img src={roboCover} alt="Front page of CRUD website" className="cover"/>
+
                     <h3>
-                    LAMP stands for Linux, Apache, MySQL, PHP. <br />
-                    CRUD stands for Create, Read, Update, Delete. <br /><br />
-                    The website was a contact manager for storing and editing contacts like name, phone number, and email.
-                    My role was to design and create the front-end html.
-                    I utilized bootstrap to help with the construction of the design.
+                    After learning about Q-Learning in an AI course, I found it to be fascinating. 
+                    This small game was then created within the next month. The user is given a grid 
+                    on which they can place a robot and any number of flags, bombs, and power treats. 
+                    The user is also given multiple parameters to tweak the AI. After clicking play, 
+                    the robot will learn on its own to reach the flag and avoid the bombs.
                     </h3>
                 </div>
             </div>
@@ -117,17 +126,14 @@ function ProjectSelection() {
         0
     );
     const projs = ["p1", "p2", "p3"];
-    
+    // const test = useRef(null);
+
     return (
         <div className="selectionDiv">
-        <p className="projects">Projects!</p>
-        
-        
+            <h1 className="projects">Current number is: {projs[projNumber]}</h1>
+            <button onClick={setProjNumber}>state change</button>
 
-        <h1 className="projects">Current number is: {projs[projNumber]}</h1>
-        <button onClick={setProjNumber}>state change</button>
-
-        <Project projNumber={projNumber}/>
+            <Project projNumber={projNumber}/>
 
         </div>
     );

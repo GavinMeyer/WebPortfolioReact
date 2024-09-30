@@ -39,6 +39,15 @@ function Footer(){
                     </button>
                 </a>
 
+                <a href="https://github.com/GavinMeyer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button>
+                        Personal GitHub
+                    </button>
+                </a>
+
                 <a href="https://github.com/GavinMeyerSchool"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -47,6 +56,7 @@ function Footer(){
                         School GitHub
                     </button>
                 </a>
+
 
             </div>
         </div>

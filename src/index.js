@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import Entrance from './Entrance';
 import Projects from './Projects';
+import Resume from './Resume';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
         <Route path="/" element={<Entrance />} />
         <Route path="/home" element={<App />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

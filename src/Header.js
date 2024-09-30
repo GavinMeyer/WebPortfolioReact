@@ -12,7 +12,7 @@ function Header(){
                 
                 <div className="rightward">
                     <Link to="/home" className="order3">
-                        About Me
+                        About
                     </Link>
                     
                     <Link to="/projects" className="order2">

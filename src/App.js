@@ -23,13 +23,17 @@ function Bio(){
           target="_blank"
           rel="noopener noreferrer"
         >
-          Look at completed portfolio (Made in Wix)
+          Look at completed TEMPORARY portfolio (Made in Wix)
         </a>
 
-        <a href="./GavinMeyerResumeF.docx" download="Gavin_Meyer_Resume">My Resume</a>
+        <Link to="/resume">My Resume</Link>
       </header>
+
+      
     </div>
   );
+
+  // <a href="./GavinMeyerResumeF.docx" download="Gavin_Meyer_Resume">My Resume</a>
 }
 
 function App() {

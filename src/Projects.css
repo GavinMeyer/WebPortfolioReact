@@ -16,6 +16,12 @@
     margin-right: 1%;
     color: white;
     display: flex;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
 }
 
 .leftCol {
@@ -24,7 +30,12 @@
 
 .rightCol {
     flex: 1;
-    margin-top: 5%;
+}
+
+.cover {
+    width: 75%;
+    border-style: solid;
+    border-color: white;
 }
 
 
