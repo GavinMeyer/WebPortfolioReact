@@ -37,8 +37,16 @@ h1.entrance {
     display: flex;
     margin: auto;
     width: 50%;
+    animation: buttons_enter 2s;
+    position: relative;
 }
 
 .buttonFlex {
     flex: 1;
 }
+
+@keyframes buttons_enter {
+    0% {opacity: 0%; bottom: 100px; top: 100px;}
+    100% {opacity: 100%; bottom: 0px; top: 0px;}
+}
+

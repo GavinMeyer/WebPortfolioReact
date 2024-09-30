@@ -1,10 +1,38 @@
 import './Projects.css';
 import Header from './Header';
 import Footer from './Footer';
-import { useReducer, useRef } from 'react';
+import { useState } from 'react';
 import animelleCover from './images/animelle.png';
 import crudCover from './images/crud1.png';
 import roboCover from './images/robo2.png';
+import minesCover from './images/mines2.png';
+
+
+function setProjNumberFunction(x, isRight) {
+    const end = 3;
+
+    if (isRight){
+        return (x<end) ? x+1 : 0;    
+    }
+    
+    return (x > 0) ? x-1 : end;
+}
+
+function ProjectSelection() {
+    const [projNumber, setProjNumber] = useState(0);
+    const dotMenu = ["[* - - -]", "[- * - -]", "[- - * -]", "[- - - *]"];
+
+    return (
+        <div className="selectionDiv">
+            <h1 className="projects">{dotMenu[projNumber]}</h1>
+            <button onClick={() => setProjNumber(setProjNumberFunction(projNumber, false))}>LEFT</button>
+            <button onClick={() => setProjNumber(setProjNumberFunction(projNumber, true))}>RIGHT</button>
+
+            <Project projNumber={projNumber}/>
+
+        </div>
+    );
+}
 
 function Project(props) {
 
@@ -109,34 +137,40 @@ function Project(props) {
             </div>
         ); 
     }
-    
-}
+    else if (props.projNumber === 3){
+        return (
+            <div className="singleProjectDiv">
+                <div className="leftCol">
+                    <h1>Minesweeper</h1>
+                    <h2>Project Type:</h2>
+                    <h4>Personal Project</h4>
 
-function setProjNumberFunction(x) {
-    if (x < 2){
-        return x+1;
+                    <h2>Date</h2>
+                    <h4>September 2023</h4>
+
+                    <h2>Link</h2>
+                    <a href="https://github.com/GavinMeyer/Minesweeper" target="_blank" rel="noopener noreferrer" className="projects">
+                        <h4>GitHub Repository</h4>
+                    </a>
+
+                    <h2>Tech Stack</h2>
+                    <h4>Godot, GDScript</h4>
+
+                    <h2>Group Size</h2>
+                    <h4>1</h4>
+                </div>
+
+                <div className="rightCol">
+                    <img src={minesCover} alt="Front page of CRUD website"  height="50%" className="cover"/>
+
+                    <h3>
+                    Created my own clone of classic game Minesweeper from scratch.
+                    </h3>
+                </div>
+            </div>
+        ); 
     }
     
-    return 0;
-}
-
-function ProjectSelection() {
-    const [projNumber, setProjNumber] = useReducer(
-        (projNumber) => setProjNumberFunction(projNumber),
-        0
-    );
-    const projs = ["p1", "p2", "p3"];
-    // const test = useRef(null);
-
-    return (
-        <div className="selectionDiv">
-            <h1 className="projects">Current number is: {projs[projNumber]}</h1>
-            <button onClick={setProjNumber}>state change</button>
-
-            <Project projNumber={projNumber}/>
-
-        </div>
-    );
 }
 
 function Projects() {
