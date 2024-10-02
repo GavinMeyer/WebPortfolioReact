@@ -75,3 +75,17 @@ body {
   margin-right: 10px;
 }
 
+.tech-div {
+  display: flex;
+  margin: 1%;
+  padding-bottom: 15px;
+  justify-content: center;
+  color: white;
+}
+
+.tech-logo {
+  max-height: 100px;
+  max-width: 100px;
+  flex: 1;
+  margin-right: 20px;
+}

@@ -4,8 +4,17 @@ import Header from './Header';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import selfPhoto from './images/professional_photo.jpg';
-import linkedInLogo from './images/LinkedIn_logo_initials.png'
-import gitHubLogo from './images/github-mark-white.png';
+import linkedInLogo from './logos/LinkedIn_logo_initials.png'
+import gitHubLogo from './logos/github-mark-white.png';
+import javaLogo from './logos/java_logo.png';
+import htmlLogo from './logos/html_logo2.png';
+import cLogo from './logos/c_logo.png';
+import cSharpLogo from './logos/csharp_logo.png';
+import pythonLogo from './logos/python_logo.png';
+import cssLogo from './logos/css_logo.png';
+import sqlLogo from './logos/sql_logo.png';
+import reactLogo from './logos/react_logo.png';
+
 
 function Bio(){
 
@@ -58,6 +67,34 @@ function Bio(){
   */
 }
 
+function TechStack() {
+  return (
+    <>
+      <div className="tech-div">
+        <h1>Programming Languages</h1>  
+      </div>
+
+      <div className="tech-div">
+        <img src={javaLogo} title="Java" alt="Java Logo" className="tech-logo"/>
+        <img src={cLogo} title="C" alt="C (language) Logo" className="tech-logo"/>
+        <img src={cSharpLogo} title="C#" alt="C# Logo" className="tech-logo"/>
+        <img src={htmlLogo} title="HTML" alt="HTML Logo" className="tech-logo"/>
+        <img src={cssLogo} title="CSS" alt="CSS Logo" className="tech-logo"/>
+        <img src={pythonLogo} title="Python" alt="Python Logo" className="tech-logo"/>
+        <img src={sqlLogo} title="SQL" alt="SQL Logo" className="tech-logo"/>
+      </div>
+
+      <div className="tech-div">
+        <h1>Technical Frameworks</h1>  
+      </div>
+
+      <div className="tech-div">
+        <img src={reactLogo} title="React.js" alt="React.js Logo" className="tech-logo"/>
+      </div>
+    </>
+  );
+}
+
 function ProjectList() {
   return (
     <div>
@@ -72,7 +109,7 @@ function App() {
       <Header />
       <Bio />
       <hr />
-      <ProjectList />
+      <TechStack />
       <Footer />
     </>
   );
