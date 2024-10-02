@@ -21,6 +21,14 @@ function Footer(){
                 <Link to="/">
                     Take me to Entrance page
                 </Link>
+                <br />
+                <a
+                    href="https://gavinplay.wixsite.com/gavin-meyer-portfoli"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                Look at completed TEMPORARY portfolio (Made in Wix)
+                </a>
             </div>
             
             <div className="column">

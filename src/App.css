@@ -44,3 +44,34 @@ body {
     transform: rotate(-20deg);
   }
 }
+
+
+.bio-headline-row {
+  display: flex;
+}
+
+.bio-headline-body {
+  flex: 1;
+}
+
+.bio-headline-photo {
+  flex: 0.5;
+}
+
+.bio-aboutme {
+  margin: 2%;
+  text-align: justify;
+}
+
+
+.bio-links {
+  margin-left: 10px;
+  display: flex;
+}
+
+.bio-links-col {
+  max-height: 50px;
+  flex: 1;
+  margin-right: 10px;
+}
+

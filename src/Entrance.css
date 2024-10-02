@@ -10,7 +10,8 @@ h1.entrance {
 }
 
 .mainDiv {
-    background: lightblue;
+    
+    background-image: url('./images/cs_bg.jpg');
     position: relative;
     min-height: 95dvh;
     margin: 1%;
@@ -35,6 +36,7 @@ h1.entrance {
 
 .buttonDiv {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     width: 50%;
     animation: buttons_enter 2s;
