@@ -3,19 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .resume {
-    margin: 1%;
-    height: 900px;
+    margin-top: 1%;
+    height: 1150px;
     width: 1000px;
 }
 
 /*
 @media (max-width: 800px) {
     .resume {
-        visibility: hidden;
+        display: none;
     }
 }
 */
