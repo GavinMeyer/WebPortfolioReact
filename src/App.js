@@ -14,6 +14,8 @@ import pythonLogo from './logos/python_logo.png';
 import cssLogo from './logos/css_logo.png';
 import sqlLogo from './logos/sql_logo.png';
 import reactLogo from './logos/react_logo.png';
+import godotLogo from './logos/godot_logo.png';
+import unityLogo from './logos/unitywhite_logo.webp';
 
 
 function Bio(){
@@ -23,14 +25,19 @@ function Bio(){
       <header className="App-header">
         
         <div className="bio-headline-row">
-          <img src={selfPhoto} alt="Gavin Meyer head shot" className="bio-headline-photo"/>
           <div className="bio-headline-body">
             <h1>
-              A little about me
+              A Little About Me
             </h1>
 
             <h4 className="bio-aboutme">
-              I am an enthusiastic software engineer that graduated with a BS of Computer Science in only three years. My experience resides primarily in Java with knowledge of C, C#, Python, HTML, and SQL. I have also worked in a group with an Agile/Scrum structure. I believe strongly in my passion for coding and would love to work for a company that would let me unleash this passion while also helping me grow.
+            I am a passionate software engineer that can go above and beyond with any challenge presented. In as few as 3 years, I graduated from the University of Central Florida with a bachelors in Computer Science. I believe in my aptitude for building on my own skills in an environment that allows me to flourish.
+            <br /><br />
+            Feel free to reach out!
+            <br />
+            Phone: +1 843-696-5700
+            <br />
+            Email: gavinplay@live.com
             </h4>
 
             <div className="bio-links">
@@ -51,6 +58,8 @@ function Bio(){
               </a>
             </div>
           </div>
+
+          <img src={selfPhoto} alt="Gavin Meyer head shot" className="bio-headline-photo"/>
         </div>
 
       </header>
@@ -85,21 +94,15 @@ function TechStack() {
       </div>
 
       <div className="tech-div">
-        <h1>Technical Frameworks</h1>  
+        <h1>Technologies</h1>  
       </div>
 
       <div className="tech-div">
         <img src={reactLogo} title="React.js" alt="React.js Logo" className="tech-logo"/>
+        <img src={unityLogo} title="Unity" alt="Unity Logo" className="tech-logo"/>
+        <img src={godotLogo} title="Godot" alt="Godot Logo" className="tech-logo"/>
       </div>
     </>
-  );
-}
-
-function ProjectList() {
-  return (
-    <div>
-      <h1>List of projects.........</h1>
-    </div>
   );
 }
 

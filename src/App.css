@@ -48,6 +48,7 @@ body {
 
 .bio-headline-row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .bio-headline-body {
@@ -56,6 +57,13 @@ body {
 
 .bio-headline-photo {
   flex: 0.5;
+}
+
+@media (max-width: 500px) {
+  .bio-headline-photo {
+    flex: 0.5;
+    max-width: 50%;
+  }
 }
 
 .bio-aboutme {
@@ -79,8 +87,9 @@ body {
   display: flex;
   margin: 1%;
   padding-bottom: 15px;
-  justify-content: center;
+  justify-content: space-around;
   color: white;
+  flex-wrap: wrap;
 }
 
 .tech-logo {

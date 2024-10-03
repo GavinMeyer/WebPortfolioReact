@@ -2,14 +2,19 @@ import './Projects.css';
 import Header from './Header';
 import Footer from './Footer';
 import { useState } from 'react';
+import leftward from './images/leftward.png';
+import rightward from './images/rightward.png';
+import fulldot from './images/fulldot.png';
+import emptydot from './images/emptydot.png';
 import animelleCover from './images/animelle.png';
 import crudCover from './images/crud1.png';
 import roboCover from './images/robo2.png';
 import minesCover from './images/mines2.png';
+import websiteCover from './images/website1.png';
 
 
 function setProjNumberFunction(x, isRight) {
-    const end = 3;
+    const end = 4;
 
     if (isRight){
         return (x<end) ? x+1 : 0;    
@@ -18,15 +23,30 @@ function setProjNumberFunction(x, isRight) {
     return (x > 0) ? x-1 : end;
 }
 
+function Dot(props) {
+
+    if (props.projNumber === props.dotnum){
+        return (<img src={fulldot} alt="Filled Dot"/>);
+    }
+
+    return (<img src={emptydot} alt="Filled Dot"/>);
+}
+
 function ProjectSelection() {
     const [projNumber, setProjNumber] = useState(0);
-    const dotMenu = ["[* - - -]", "[- * - -]", "[- - * -]", "[- - - *]"];
+    // const dotMenu = ["[* - - -]", "[- * - -]", "[- - * -]", "[- - - *]"];
 
+    // <button onClick={() => setProjNumber(setProjNumberFunction(projNumber, false))}><img src={leftward} alt="left button"/></button>
     return (
         <div className="selectionDiv">
-            <h1 className="projects">{dotMenu[projNumber]}</h1>
-            <button onClick={() => setProjNumber(setProjNumberFunction(projNumber, false))}>LEFT</button>
-            <button onClick={() => setProjNumber(setProjNumberFunction(projNumber, true))}>RIGHT</button>
+            <input src={leftward} type="image" onClick={() => setProjNumber(setProjNumberFunction(projNumber, false))} alt="left button" />
+            <Dot projNumber={projNumber} dotnum={0} />
+            <Dot projNumber={projNumber} dotnum={1} />
+            <Dot projNumber={projNumber} dotnum={2} />
+            <Dot projNumber={projNumber} dotnum={3} />
+            <Dot projNumber={projNumber} dotnum={4} /> 
+            <input src={rightward} type="image" onClick={() => setProjNumber(setProjNumberFunction(projNumber, true))} alt="right button" />
+
 
             <Project projNumber={projNumber}/>
 
@@ -41,9 +61,9 @@ function Project(props) {
             <div className="singleProjectDiv">
                 <div className="leftCol">
                     <h1>ELLE Endless Learner: AnimELLE Crossing</h1>
-                    <h2>Project Type:</h2>
+                    <h2>Project Type</h2>
                     <h4>School Project</h4>
-
+                    
                     <h2>Date</h2>
                     <h4>January - July 2024</h4>
 
@@ -58,7 +78,7 @@ function Project(props) {
                     <h2>Group Size</h2>
                     <h4>6</h4>
                 </div>
-
+                
                 <div className="rightCol">
                     <img src={animelleCover} alt="Main Menu of ELLE's Animelle Crossing game" className="cover"/>
                     
@@ -78,7 +98,7 @@ function Project(props) {
             <div className="singleProjectDiv">
                 <div className="leftCol">
                     <h1>LAMP Stack CRUD Website</h1>
-                    <h2>Project Type:</h2>
+                    <h2>Project Type</h2>
                     <h4>School Project</h4>
 
                     <h2>Date</h2>
@@ -105,12 +125,12 @@ function Project(props) {
             </div>
         ); 
     }
-    else if (props.projNumber === 2){
+    else if (props.projNumber === 3){
         return (
             <div className="singleProjectDiv">
                 <div className="leftCol">
                     <h1>Robot AI (Q-Learning)</h1>
-                    <h2>Project Type:</h2>
+                    <h2>Project Type</h2>
                     <h4>Personal Project</h4>
 
                     <h2>Date</h2>
@@ -137,12 +157,47 @@ function Project(props) {
             </div>
         ); 
     }
-    else if (props.projNumber === 3){
+    else if (props.projNumber === 2){
+        return (
+            <div className="singleProjectDiv">
+                <div className="leftCol">
+                    <h1>Portfolio Website</h1>
+                    <h2>Project Type</h2>
+                    <h4>Personal Project</h4>
+
+                    <h2>Date</h2>
+                    <h4>August - September 2024</h4>
+
+                    <h2>Link</h2>
+                    <a href="https://github.com/GavinMeyer/WebPortfolioReact" target="_blank" rel="noopener noreferrer" className="projects">
+                        <h4>GitHub Repository</h4>
+                    </a>
+
+                    <h2>Tech Stack</h2>
+                    <h4>HTML/CSS, Javascript, React.JS, Node.JS, Netlify</h4>
+
+                    <h2>Group Size</h2>
+                    <h4>1</h4>
+                </div>
+
+                <div className="rightCol">
+                    <img src={websiteCover} alt="Front page of current portfolio website"  height="50%" className="cover"/>
+
+                    <h3>
+                    This website acts as a portfolio, which allowed me to strengthen my foundational knowledge in website design. 
+                    <br />
+                    Also plays a role in front-end user design.
+                    </h3>
+                </div>
+            </div>
+        ); 
+    }
+    else if (props.projNumber === 4){
         return (
             <div className="singleProjectDiv">
                 <div className="leftCol">
                     <h1>Minesweeper</h1>
-                    <h2>Project Type:</h2>
+                    <h2>Project Type</h2>
                     <h4>Personal Project</h4>
 
                     <h2>Date</h2>

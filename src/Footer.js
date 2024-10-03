@@ -1,5 +1,4 @@
 import './Footer.css';
-import { Link } from 'react-router-dom';
 
 function Footer(){
     return(
@@ -13,22 +12,10 @@ function Footer(){
                     What's Next?
                 </h1>
                 <h3>
-                    Working on this website.
+                    Updating and improving this website!
                 </h3>
                 
                 <br />
-
-                <Link to="/">
-                    Take me to Entrance page
-                </Link>
-                <br />
-                <a
-                    href="https://gavinplay.wixsite.com/gavin-meyer-portfoli"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                Look at completed TEMPORARY portfolio (Made in Wix)
-                </a>
             </div>
             
             <div className="column">

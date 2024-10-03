@@ -5,25 +5,28 @@ div.scroll {
     z-index: 10;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: rgb(172, 108, 119, 1.0);
+    background-color: rgb(0, 62, 128);
     /* background: linear-gradient(0.25turn, rgb(172, 108, 119, 1.0), rgb(172, 108, 119, 0.5), rgb(172, 108, 119, 1.0)); */
 }
 
 div.rightward {
     float: right;
-    padding-right: 55px;
+    padding-right: 2%;
 }
 
 a.order1 {
     text-decoration: none;
     padding-left: 1%;
+    color: white;
 }
 
 a.order2 {
     text-decoration: none;
+    color: white;
 }
 
 a.order3 {
     text-decoration: none;
     padding-right: 20px;
+    color: white;
 }
