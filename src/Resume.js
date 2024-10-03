@@ -7,11 +7,11 @@ function ResumeContent() {
     return (
         <>
             <div className="resumeDiv">
-                <iframe src= "GavinMeyerResumeI.pdf" title="resumePDF" type="application/pdf" className="resume"></iframe>
+                <iframe src= "GavinMeyerResumeL.pdf" title="resumePDF" type="application/pdf" className="resume"></iframe>
             </div>
 
             <div className="resumeDiv">
-                <a href="./GavinMeyerResumeI.pdf" download="Gavin_Meyer_Resume">
+                <a href="./GavinMeyerResumeL.pdf" download="Gavin_Meyer_Resume">
                     <button>Download</button>
                 </a>
             </div>        

@@ -31,9 +31,9 @@ function Bio(){
             </h1>
 
             <h4 className="bio-aboutme">
-            I am a passionate software engineer that can go above and beyond with any challenge presented. In as few as 3 years, I graduated from the University of Central Florida with a bachelors in Computer Science. I believe in my aptitude for building on my own skills in an environment that allows me to flourish.
+            I'm a passionate software engineer with a strong focus on achieving my goals. I proudly graduated from UCF in just three years, showcasing my dedication and determination. I'm continuously honing my skills, including building this website to demonstrate my front-end development expertise using React. I thrive on challenges and am always eager to learn more in the ever-evolving tech landscape.  
             <br /><br />
-            Feel free to reach out!
+            Hire me!
             <br />
             Phone: +1 843-696-5700
             <br />
